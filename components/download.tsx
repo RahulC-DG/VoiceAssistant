@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { DownloadIcon, Monitor, HardDrive, Wifi, Mic, CheckCircle } from "lucide-react"
@@ -8,14 +10,12 @@ export function Download() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#f0f6fc]">Ready to Transform Your Voice?</h2>
-          <p className="text-xl text-[#8b949e] max-w-3xl mx-auto">
-            Download now and start speaking intelligently in under 2 minutes
-          </p>
+
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Download section */}
-          <div className="text-center lg:text-left">
+          <div id="download-section" className="text-center lg:text-left">
             <Card className="bg-gradient-to-br from-[#1f6feb]/10 to-[#ff6b35]/10 border-[#1f6feb]/30 p-8">
               <CardContent className="p-0">
                 <div className="mb-6">
@@ -41,10 +41,13 @@ export function Download() {
 
                 <Button
                   size="lg"
+                  asChild
                   className="w-full bg-gradient-to-r from-[#1f6feb] to-[#ff6b35] hover:from-[#1f6feb]/80 hover:to-[#ff6b35]/80 text-white font-semibold py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <DownloadIcon className="w-5 h-5 mr-2" />
-                  Download Free (50-80MB)
+                  <a href="/voice-assistant-app.zip" download="voice-assistant-app.zip">
+                    <DownloadIcon className="w-5 h-5 mr-2" />
+                    Download Free (50-80MB)
+                  </a>
                 </Button>
 
                 <p className="text-sm text-[#8b949e] mt-4 text-center">

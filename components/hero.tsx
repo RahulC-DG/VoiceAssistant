@@ -1,8 +1,16 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Download, Mic, Zap } from "lucide-react"
 import { VoiceWave } from "@/components/voice-wave"
+import { useCallback } from "react"
 
 export function Hero() {
+  const scrollToDownload = useCallback(() => {
+    const target = document.getElementById("download-section")
+    target?.scrollIntoView({ behavior: "smooth" })
+  }, [])
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* Background gradient */}
@@ -49,6 +57,7 @@ export function Hero() {
         {/* CTA Button */}
         <Button
           size="lg"
+          onClick={scrollToDownload}
           className="bg-gradient-to-r from-[#1f6feb] to-[#ff6b35] hover:from-[#1f6feb]/80 hover:to-[#ff6b35]/80 text-white font-semibold px-8 py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
         >
           <Download className="w-5 h-5 mr-2" />

@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Calendar, Brain, Mic2, Users, Zap, Shield } from "lucide-react"
+import { Calendar, Brain, Mic2, Users, Zap, Shield, MessageCircle, Sliders } from "lucide-react"
 
 const features = [
   {
@@ -15,6 +15,20 @@ const features = [
     description:
       "Voice brainstorming sessions with intelligent AI responses. Turn conversations into actionable insights and creative solutions.",
     benefits: ["Interactive idea development", "Real-time session summaries", "Creative thinking support"],
+  },
+  {
+    icon: Sliders,
+    title: "Custom Voice Shortcuts",
+    description:
+      "Create your own trigger phrases for any command. Tailor the assistant to your natural speech and work style with an intuitive in-app editor.",
+    benefits: ["Personalized voice commands", "Faster task execution", "Easy customization"],
+  },
+  {
+    icon: MessageCircle,
+    title: "Instant AI Answers",
+    description:
+      "Get quick, GPT-4-powered answers to any question. Just say “Question” and speak—no typing, no menus, just immediate knowledge.",
+    benefits: ["One-word activation", "Concise spoken replies", "Hands-free assistance"],
   },
   {
     icon: Zap,
@@ -59,7 +73,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <Card
               key={index}
