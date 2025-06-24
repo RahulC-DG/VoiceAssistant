@@ -60,17 +60,23 @@ export function HowItWorks() {
           ))}
         </div>
 
-        {/* Demo video placeholder */}
+        {/* Demo video */}
         <div className="mt-16 text-center">
           <div className="bg-[#21262d] border border-[#30363d] rounded-xl p-8 max-w-4xl mx-auto">
-            <div className="aspect-video bg-gradient-to-br from-[#1f6feb]/10 to-[#ff6b35]/10 rounded-lg flex items-center justify-center mb-4">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#1f6feb]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mic className="w-8 h-8 text-[#1f6feb]" />
-                </div>
-                <p className="text-[#8b949e] text-lg">Demo Video Coming Soon</p>
-                <p className="text-[#8b949e] text-sm">See the AI Voice Assistant in action</p>
+            <div className="aspect-video bg-gradient-to-br from-[#1f6feb]/10 to-[#ff6b35]/10 rounded-lg overflow-hidden">
+              <div style={{ position: 'relative', paddingBottom: '64.98194945848375%', height: 0 }}>
+                <iframe 
+                  src="https://www.loom.com/embed/d0143b4d7fb44942906708b23c929fc7?sid=569b0ea2-26e9-4d50-9eda-af1b9f467b27" 
+                  frameBorder={0}
+                  allowFullScreen 
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                  title="AI Voice Assistant Demo"
+                />
               </div>
+            </div>
+            <div className="mt-4">
+              <p className="text-[#f0f6fc] text-lg font-medium">See the AI Voice Assistant in Action</p>
+              <p className="text-[#8b949e] text-sm">Watch how easy it is to get started in under 2 minutes</p>
             </div>
           </div>
         </div>
