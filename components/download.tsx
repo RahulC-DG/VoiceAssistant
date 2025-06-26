@@ -44,7 +44,7 @@ export function Download() {
                   asChild
                   className="w-full bg-gradient-to-r from-[#1f6feb] to-[#ff6b35] hover:from-[#1f6feb]/80 hover:to-[#ff6b35]/80 text-white font-semibold py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <a href="https://github.com/RahulC-DG/AI-Voice-Assistant/releases/download/v1.0.1/AI-Voice-Assistant-v1.0.1.zip">
+                  <a href="https://github.com/RahulC-DG/AI-Voice-Assistant/releases/download/v1.0.2/AI-Voice-Assistant-v1.0.2.zip">
                     <DownloadIcon className="w-5 h-5 mr-2" />
                     Download Free (50-80MB)
                   </a>

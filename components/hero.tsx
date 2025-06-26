@@ -22,7 +22,7 @@ export function Hero() {
             <div className="flex items-center gap-2 text-sm">
               <span className="font-medium">Check out our new release</span>
               <a 
-                href="https://github.com/RahulC-DG/AI-Voice-Assistant/releases/tag/v1.0.1"
+                href="https://github.com/RahulC-DG/AI-Voice-Assistant/releases/tag/v1.0.2"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:no-underline font-medium"
